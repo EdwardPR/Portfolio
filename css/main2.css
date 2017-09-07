@@ -195,7 +195,7 @@ a-scene {
   justify-content: flex-start;
   flex-direction: column;
   width: 1080px;
-  padding: 0 1rem 4rem 1rem;
+  padding: 2rem 1rem 4rem 1rem;
 }
 
 .main-container {
@@ -206,7 +206,7 @@ a-scene {
 
 .landing-main-wrapper {
   width: 1080px;
-  padding-top: 4rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -215,7 +215,7 @@ a-scene {
 
 .main-wrapper {
   width: 720px;
-  padding-top: 4rem;
+  padding-top: 8rem;
   display: flex;
   flex-direction: column;
 }
@@ -279,6 +279,14 @@ a-scene {
 
 .one-third-aside {
   width: 232px;
+}
+
+figure.one-third-aside {
+  margin: 0;
+}
+
+figure.one-third-aside img {
+  width: 100%;
 }
 
 .one-column-video {
@@ -363,6 +371,12 @@ a-scene {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+}
+
+#contact-list {
+  color: #1F354E;
+  list-style: none;
+  padding: 0;
 }
 
 .section-separator {

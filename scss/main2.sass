@@ -226,7 +226,7 @@ a-scene
 	justify-content: flex-start
 	flex-direction: column
 	width: $landing-page-max-width
-	padding: 0 1rem $subsection-bottom-margin 1rem
+	padding: 2rem 1rem $subsection-bottom-margin 1rem
 
 .main-container
 	display: flex
@@ -235,7 +235,7 @@ a-scene
 
 .landing-main-wrapper
 	width: $landing-page-max-width
-	padding-top: 4rem	
+	padding-top: 2rem	
 	display: flex
 	flex-direction: row
 	flex-wrap: wrap
@@ -243,7 +243,7 @@ a-scene
 
 .main-wrapper
 	width: $content-page-max-width
-	padding-top: 4rem	
+	padding-top: 8rem	
 	display: flex
 	flex-direction: column
 
@@ -300,6 +300,12 @@ a-scene
 
 .one-third-aside
 	width: 232px
+
+figure.one-third-aside
+	margin: 0
+	img
+		width: 100%
+
 
 .one-column-video
 	display: flex
@@ -369,6 +375,11 @@ a-scene
 	flex-direction: column
 	// justify-content: space-between
 	margin-bottom: 2rem
+
+#contact-list
+	color: $darkBlue
+	list-style: none
+	padding: 0
 
 .section-separator
 	display: flex
@@ -486,6 +497,7 @@ footer
 @media only screen and (max-width: 720px)
 	.main-container
 		display: block
+
 	.main-wrapper
 		box-sizing: border-box
 		width: 100%
