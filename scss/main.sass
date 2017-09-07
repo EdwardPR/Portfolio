@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,400i,600,800');
+
+// colors
+$myGreen: #006432
+$myMedGreen: #C4DBD0
+$whiteBackground: rgba(255,255,255,100)
+
+$eastBay: #435484
+$bostonBlue: #4296BE
+$silverTree: #63C18D
+$stromboli: #2E5C43
+$blueCharcoal: #011015
+$gray: #F0F0F0
+
+$headerFont: Raleway
+$bodyFont: Raleway
+
+// $greenBorder: solid $deepSeaGreen
+
+$myGray1: rgba(10,10,10,100)
+$myGray2: rgba(50,50,50,100)
+$myGray3: rgba(100,100,100,100)
+
+$sitePadding: 0.8em 5%
+$siteWidth: 90%
+$maxSiteWidth: 1024px
+
+$headerFontWeight: 800
+
+$headerTopMargin: 0em
+$headerRightMargin: 0em
+$headerBottomMargin: 0em
+$headerLeftMargin: 0em
+
+$bodyTopMargin: 0em
+$bodyBottomMargin: 1em
+
+$tabletRightIndexItemMargin: 1em 0 1em 2em
+$tabletLeftIndexItemMargin: 1em 2em 1em 0
+
+$linkedIn: "\f08c"
+$email: "\f0e0"
+
+// mobile first
+html
+    box-sizing: border-box;
+    font-family: Raleway
+    color: $gray
+
+body
+	background-color: $blueCharcoal
+	display: flex
+	flex-direction: column
+
+h1
+	color: $silverTree
+	font-family: $headerFont
+	font-size: 1.931em
+	font-weight: 800
+	margin: $headerTopMargin $headerRightMargin $headerBottomMargin $headerLeftMargin
+
+h2
+	color: $silverTree
+	font-family: $headerFont
+	font-size: 1.618em
+	font-weight: $headerFontWeight
+	margin: $headerTopMargin $headerRightMargin 0.5em $headerLeftMargin
+h3
+	color: $silverTree
+	font-family: $headerFont
+	font-size: 1.194em
+	font-weight: $headerFontWeight
+	margin: $headerTopMargin $headerRightMargin $headerBottomMargin $headerLeftMargin
+
+p
+	color: $gray
+	font-family: $bodyFont
+	font-size: 1em
+	font-weight: 400
+	margin-top: $bodyTopMargin
+	margin-bottom: $bodyBottomMargin
+
+b
+	color: $silverTree
+	display: inline-block
+	font-family: $bodyFont
+	font-size: 1em
+	font-weight: 600
+	margin-top: $bodyTopMargin
+	// margin-bottom: $bodyBottomMargin
+
+strong
+	color: $gray
+	display: inline-block
+	font-family: $headerFont
+	font-size: 1.618em
+	font-weight: 600
+	margin-top: $bodyTopMargin
+	margin-bottom: $bodyBottomMargin
+
+em
+	color: $gray
+	display: inline-block
+	font-family: $bodyFont
+	font-size: 1.194em
+	font-weight: 400
+	margin-top: $bodyTopMargin
+	margin-bottom: $bodyBottomMargin
+
+i
+	color: $silverTree
+	display: inline-block
+	font-family: $headerFont
+	font-size: 1em
+	font-weight: 400
+	margin-bottom: $bodyBottomMargin
+
+figcaption
+	margin-top: 0.25em
+	font-size: 0.707em
+
+button
+	background-color: $blueCharcoal
+	height: 42px
+	width: 178px
+	border: 0
+	padding: 0
+	display: flex
+	align-items: center
+
+button:hover
+	b
+		color: $bostonBlue
+		transition: color 0.3s
+
+ul
+	margin-top: 0
+	list-style: none
+
+a
+	color: $silverTree
+	text-decoration: none
+
+article
+	margin: 110px 0 0 0
+
+img
+	max-width: 100%
+
+a-scene
+	height: 70vh !important
+	width: 1024px !important
+
+#header-container
+	left: 0
+	width: 100%
+	background-color: $blueCharcoal
+	z-index: 9999
+	position: fixed
+	header
+		padding: $sitePadding
+		width: $siteWidth
+		margin: auto
+		max-width: $maxSiteWidth
+		top: 0
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+#mainNavList
+	display: flex
+	justify-content: space-between
+	margin: 0
+	li:not(:last-child)
+		padding: 0 0 0 4em
+		display: none
+	a
+		padding: 0 0.2em
+	a:hover
+		color: $bostonBlue
+		transition: color 0.3s
+
+
+#main-container
+	#main-wrapper
+		padding: $sitePadding
+		width: $siteWidth
+		margin: auto
+		max-width: $maxSiteWidth
+		display: flex
+		flex-direction: column
+
+#home-page-description
+	display: flex
+	display: -webkit-flex
+	flex-direction: column
+	header
+		width: 100%
+		max-width: 633px
+		margin: 0 0 26px 0
+		display: flex
+		align-items: center
+	a
+		height: 42px
+		width: 178px
+		button
+			// border: solid $silverTree
+			background-color: $blueCharcoal
+			// border-radius: 4px
+			z-index: 9998
+			b
+				margin: auto
+	// button:hover
+	// 	border: solid $bostonBlue	
+
+.index-items
+	display: flex
+	flex-direction: column
+
+.video-containers
+	display: flex
+	align-items: baseline
+	justify-content: center
+	margin-bottom: 42px
+	.phones
+		max-height: 576px
+		max-width: 100%
+	video
+		max-height: 288px
+		max-width: 100%
+
+
+#footer-container
+	display: flex
+	justify-content: center
+	margin: 110px 0 0 0
+	footer
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		margin: auto
+		max-width: $maxSiteWidth
+		height: 110px
+		width: 50%
+		a
+			color: $silverTree
+			text-align: center
+			height: 42px
+			width: 68px
+			i:hover
+				color: $bostonBlue
+				transition: color 0.3s	
+
+.sections
+	margin-top: 110px
+
+.overview
+	margin-top: 110px
+	header
+		text-align: flex-start
+		// max-width: 632px
+		margin-bottom: 1em
+		// margin: auto auto 3em auto
+	section
+		display: flex
+		flex-direction: row
+		aside
+			width: 38.2%
+		div
+			width: 61.8%
+			iframe
+				margin-top: 1em
+
+.sections
+	ul
+		list-style-type: disc;
+
+.challenges
+	max-width: 632px
+
+.research
+	#methods
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		div
+			width: calc(38.2% - 2em)
+		figure
+			margin: 0
+			width: 61.8%
+			object-fit: cover
+			// img
+			// 	object-fit: cover
+			figcaption
+				text-align: flex-start
+	.principlesBox
+		margin-top: 68px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		header
+			width: 61.8%
+		.principles
+			max-width: 45%
+			margin: 2em 0
+
+.content
+	width: 61.8%
+
+.ideation
+	#ideation-pictures
+		width: 100%
+		display: flex
+		flex-direction: row
+		figure
+			margin: 0.25em
+			display: flex
+			flex-direction: column
+			// img
+			// 	width: 33%
+
+.ideaSelection
+	#figures
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		figure
+			margin: 0
+			padding: 1em
+			display: flex
+			flex-direction: column
+			width: 45%
+			img
+				margin: 1em
+				object-fit: cover
+				align-self: center
+			// .laundromat-research
+			// 	clip-path: circle(180px at center)
+		#VR-timeline
+			border: solid $silverTree
+			border-radius: 8px
+		#MR-sandbox
+			opacity: .6
+	// #first-iteration
+	// 	margin: 0
+	// 	display: flex
+	// 	justify-content: center
+	// 	#second-matrix
+	// 		width: 45%
+	// 	div
+	// 		width: 50.625%
+	// 		margin: 1em
+	// 		img
+	// 			align-self: center
+	// #second-iteration
+	// 	margin: 2em 0 0 0
+	// 	display: flex
+	// 	flex-direction: column
+	// 	align-items: center
+	// 	div
+	// 		width: 45%
+	// 		img
+	// 			align-self: center
+
+.concept-videos
+	width: 100%
+	display: flex
+	flex-direction: row
+	div
+		margin: 1em
+		width: 50%
+		iframe
+			width: 100%
+
+.interaction-flow
+	div
+		display: flex
+		flex-direction: row
+		.content
+			display: flex
+			flex-direction: column
+			width: 38.2%
+		figure
+			margin: 0
+			padding: 2em
+			width: 61.2%
+
+.hero-flows
+	div
+		.content
+			display: flex
+			flex-direction: column
+			width: 61.2%
+		.video-containers
+			max-width: 100%
+			video
+				max-height: 100%
+				max-width: 100%
+
+// media queries
+@media only screen and (min-width: 768px)
+	#mainNav
+		display: flex
+		align-items: center
+
+	#mainNavList
+		display: flex
+		justify-content: space-between
+		margin: 0
+		li:not(:last-child)
+			display: inline-block
+		li:last-child
+			display: none
+
+	.index-items
+		display:flex
+		flex-direction: row
+		align-items: center
+		.video-containers
+			width: 100%
+			margin: $tabletLeftIndexItemMargin
+			display: flex
+			justify-content: center
+		section
+			width: 100%
+			margin: $tabletRightIndexItemMargin
+
+	#banner
+		height: 30vh
+		display: flex
+		align-items: center
+		#home-page-description
+			display:flex
+			flex-direction: column
+
+	#index-item-2-video
+		order: 1
+		// margin: $tabletRightIndexItemMargin
+		// display: flex
+		// justify-content: flex-start
+
+	#index-item-2-content
+		order: 2
+		// display: flex
+		// flex-direction: column
+		// align-items: flex-end
+		// margin: $tabletLeftIndexItemMargin
+		// header
+		// 	display: flex
+		// 	flex-direction: column
+		// 	align-items: flex-end
+		// 	p
+		// 		text-align: right
+		// button
+		// 	display: flex
+		// 	justify-content: flex-end
+
+
+
+.button
+	// display: inline
+	// position: absolute
+	// right: 50px
+	// top: 6px
+	z-index: 999
+	font-size: 1.618em
+
+.button a
+	text-decoration: none
+
+.btn-open:after
+	color: $silverTree
+	content: "\f0c9"
+	font-family: "FontAwesome"
+	transition: all .2s linear 0s
+	-moz-transition: all .2s linear 0s
+	-webkit-transition: all .2s linear 0s
+	-o-transition: all .2s linear 0s
+
+.btn-open:hover:after
+	color: $bostonBlue
+
+.btn-close:after
+	color: $silverTree
+	content: "\f00d"
+	font-family: "FontAwesome"
+	transition: all .2s linear 0s
+	-moz-transition: all .2s linear 0s
+	-webkit-transition: all .2s linear 0s
+	-o-transition: all .2s linear 0s
+
+.btn-close:hover:after
+	color: $bostonBlue
+
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	background: $blueCharcoal
+	overflow: auto
+	z-index: 99
+
+.wrap
+	color: #e9e9e9
+	text-align: center
+	max-width: 90%
+	margin: 0 auto
+
+.wrap ul.wrap-nav
+	// border-bottom: 1px solid #575757
+	// text-transform: capitalize
+	padding: 50px 0 0 0
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.wrap ul.wrap-nav li
+	font-size: 20px
+	display: inline-block
+	vertical-align: top
+	width: 24%
+	position: relative
+
+.wrap ul.wrap-nav li a
+	color: #silverTree
+	display: block
+	padding: 8px 0
+	text-decoration: none
+	transition: all .2s linear 0s
+	-moz-transition: all .2s linear 0s
+	-webkit-transition: all .2s linear 0s
+	-o-transition: all .2s linear 0s
+
+.wrap ul.wrap-nav li a:hover
+	color: $bostonBlue
+
+// .wrap ul.wrap-nav ul
+// 	padding: 20px 0
+
+// .wrap ul.wrap-nav ul li
+// 	display: block
+// 	font-size: 13px
+// 	width: 100%
+// 	color: #e9e9e9
+
+// .wrap ul.wrap-nav ul li a
+// 	color: #f0f0f0
+
+// .wrap ul.wrap-nav ul li a:hover
+// 	color: #34B484
+
+
+// courtesy of Hover.css; http://ianlunn.github.io/Hover/
+/* Icon Forward */
+.hvr-icon-forward 
+  display: inline-block
+  vertical-align: middle
+  -webkit-transform: perspective(1px) translateZ(0)
+  transform: perspective(1px) translateZ(0)
+  box-shadow: 0 0 1px transparent
+  position: relative
+  padding-right: 2.2em
+  -webkit-transition-duration: 0.1s
+  transition-duration: 0.1s
+
+.hvr-icon-forward:before 
+  content: "\f138"
+  position: absolute
+  right: 1em
+  bottom: 1px
+  padding: 0 1px
+  font-family: FontAwesome
+  -webkit-transform: translateZ(0)
+  transform: translateZ(0)
+  -webkit-transition-duration: 0.1s
+  transition-duration: 0.1s
+  -webkit-transition-property: transform
+  transition-property: transform
+  -webkit-transition-timing-function: ease-out
+  transition-timing-function: ease-out
+
+.hvr-icon-forward:hover:before, .hvr-icon-forward:focus:before, .hvr-icon-forward:active:before 
+  -webkit-transform: translateX(4px)
+  transform: translateX(4px)
+
+
+/* Outline Out */
+.hvr-outline-out
+  display: inline-block
+  vertical-align: middle
+  -webkit-transform: perspective(1px) translateZ(0)
+  transform: perspective(1px) translateZ(0)
+  box-shadow: 0 0 1px transparent
+  position: relative
+
+.hvr-outline-out:before
+  content: ''
+  position: absolute
+  border-color: $silverTree 
+  border-style: solid 
+  border-width: 3px
+  border-radius: 4px
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  -webkit-transition-duration: 0.3s
+  transition-duration: 0.3s
+  -webkit-transition-property: top, right, bottom, left, border-color
+  transition-property: top, right, bottom, left, border-color
+
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before
+  border-color: $bostonBlue
+  top: -8px
+  right: -8px
+  bottom: -8px
+  left: -8px
+

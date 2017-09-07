@@ -1,0 +1,657 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SpaceTalk</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/boilerplate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+        <script src="europa/js/sub-menu7.js"></script>
+        <script src="https://unpkg.com/aframe-look-at-component@0.5.1/dist/aframe-look-at-component.min.js"></script>
+        <!-- <script src="https://unpkg.com/aframe-log-component/dist/aframe-log-component.min.js"></script>  -->
+        <script src="https://unpkg.com/aframe-layout-component@4.2.0/dist/aframe-layout-component.min.js"></script>
+        <script src="https://unpkg.com/aframe-animation-component/dist/aframe-animation-component.min.js"></script>
+        <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-105797301-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="header-container">
+            <header>
+                <h3>EDWARD ROBERTS</h3>
+                <nav id="mainNav">
+                    <ul id="mainNavList">
+                        <li>
+                            <a href="index.html">Work</a>
+                        </li>
+                        <li>
+                            <a href="About.html">About</a>
+                        </li>
+                        <li class="button">
+                            <a class="btn-open" href="#"></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="overlay">
+                    <div class="wrap">
+                        <ul class="wrap-nav">
+                            <li type="button">
+                                <h2>
+                                    <a href="index.html">Work</a>
+                                </h2>
+                            </li>
+                            <li type="button">
+                                <h2>
+                                    <a href="About.html">About</a>
+                                </h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="main-container">
+            <div id="main-wrapper" class="clearfix">
+
+                <section class="sections overview">
+                    <header>
+                        <h1>SpaceTalk</h1>
+                    </header>
+                    <section>
+                        <aside>
+                            <h3>Sponsor</h3>
+                            <p>NASA Jet Propulsion Laboratory</p>
+                            <h3>Role</h3>
+                            <p>User Research<br>Interaction Design<br>3D Prototyping</p>
+                            <h3>Timeline</h3>
+                            <p>7 Months</p>
+                            <h3>Deliverables</h3>
+                            <p>Design Specification<br>High Fidelity Prototype<br>Concept Video<br>Presentation</p>
+                            <h3>Group</h3>
+                            <p>Terrie Chan<br>Eugene Meng<br>Brian Orlando</p>
+                        </aside>
+                        <div>
+                            <div>
+                                <em>How might we help remotely-located NASA engineers and scientists collaborate in the Europa Clipper Mission?</em>
+                            </div>
+                            <iframe src="https://player.vimeo.com/video/232088076" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                    </section>
+                </section>
+                <section class="sections challenges">
+                    <h2>Challenges</h2>
+                    <p>The NASA Jet Propulsion Lab proposed the challenge of designing a tool to aid scientists and engineers in the Europa Clipper mission to collaborate better by leveraging immersive technologies.</p>
+                    <p>To solve this open-ended design problem, we needed to overcome some challenges inherent to the task:
+                    <ul>
+                        <li>Understand a specialized and historic organization</li>
+                        <li>Remotely discover information and usability needs</li>
+                        <li>Design with few widely accepted heuristics</li>
+                        <li>Prototype with time-intensive tools</li>
+                    </ul>
+                </section>
+                <section class="sections research">
+                    <h2>Primary Research</h2>
+                    <div id="methods">
+                        <div>
+                            <p>Remotely uncovering the nuances of NASA and the needs of the people who run it presented a huge challenge for us here. We overcame this by employing a few methods to elicit as much varied information as possible from our interviews.</p>
+                            <b>Research Methods:</b>
+                            <ul>
+                                <li>Semi-structured interview</li>
+                                <li>Online closed card sort</li>
+                                <li>Customized iterative workflow diagram that personnel could critique</li>
+                            </ul>
+                        </div>
+                        <figure>
+                            <img src="img/NASA/remoteResearch.jpg">
+                            <figcaption>We had to get creative to interview people hundreds of miles away.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="principlesBox">
+                        <header>
+                            <h3>Design Principles</h3>
+                            <p>From all our research, we were able to distill 8 principles that provided a design framework for the rest of our project.</p>
+                        </header>
+                        <div class="principles">
+                            <b>Embrace NASA's Heritage.</b>
+                            <p>We must not only embrace NASA’s drive to push the envelope of what’s possible, but we must also prove the utility and robustness of our design through extensive testing and simulation.</p>
+                        </div>
+                        <div class="principles">
+                            <b>Acknowledge the politics.</b>
+                            <p>Acknowledge political motivations and tensions in an effort to improve collaboration between mission stakeholders.</p>
+                        </div>
+                        <div class="principles">
+                            <b>Socially translucent.</b>
+                            <p>Make system actions and activities clearly visible among all teams to instill trust and empathy.</p>
+                        </div>
+                        <div class="principles">
+                             <b>Time sensitive.</b>
+                             <p>Be cognizant of the limited time in the mission and take quick, time-sensitive, face-to-face interactions into account.</p>
+                        </div>
+                        <div class="principles">
+                             <b>Emotionally aware.</b>
+                             <p>Recognize the emotional valence of these types of missions in order to help users perform the right tasks in the right contexts.</p>
+                         </div>
+                         <div class="principles">
+                            <b>Just redundant enough.</b>
+                            <p>Provide redundant data in all appropriate contexts, but only when necessary.</p>
+                         </div>
+                         <div class="principles">
+                             <b>Adaptable and flexible.</b>
+                             <p>Accommodate the expected uncertainty of orbiter missions and a constantly changing mission plan, schedule and timeline.</p>
+                         </div>
+                         <div class="principles">
+                              <b>Immersive where it counts.</b>
+                             <p>Only employ 3D immersive environments when necessary. They can be amazing, but can also detract from productivity</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="sections ideation">
+                    <h2>Idea Generation</h2>
+                    <div class="content">
+                        <p>Now that we had a framework to work within, we needed to generate as many ideas as possible so we could sort and find a good idea to develop further.</p>
+                        <p>From our research we had also identified three opportunity areas: Science Collaboration, science-engineer collaboration, and timeline visualization. We started with these to broadly ideate for.</p>
+                        <b>Ideation Methods</b>
+                        <ul>
+                            <li>Used Crazy 8's and Braiding</li>
+                            <li>Generated 200+ ideas</li>
+                        </ul>
+                    </div>
+                    <div id="ideation-pictures">
+                        <figure id="science-collaboration">
+                            <h3>Science Collaboration</h3>
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_02.jpg">
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_07.jpg">
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_12.jpg">
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_06.jpg">
+                            <figcaption>There were many more, but alas, not enough room.</figcaption>
+                        </figure>
+                        <figure id="engineer-science-collaboration">
+                            <h3>Science-Engineer Collaboration</h3>
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_01.jpg">  
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_04.jpg">
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_10.jpg">
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_11.jpg">
+                        </figure>
+                        <figure id="timeline visualization">
+                            <h3>Timeline Visualization</h3>
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_03.jpg">
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_05.jpg">
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_08.jpg">
+                            <img src="img/NASA/ideation/00_Crazy 8s Round 1/Crazy 8s Round 1_Page_09.jpg">
+                        </figure>
+                    </div>
+                </section>
+                <section class="sections ideaSelection">
+                    <h2>Idea Selection</h2>
+                    <div class="content">
+                        <p>Through peer feedback and 2x2 matrices, we were able to narrow down to two compelling ideas. To help us determine which one to move forward with, we developed storyboards to understand their use cases.</p>
+                        <p>In the end though, we decided to move forward with the Virtual Reality Timeline tool due to its feasibility and clear user needs, in contrast to Mixed Reality Sandbox.</p>
+                    </div>
+                    <div id="figures">
+                        <figure id="VR-timeline">
+                            <h3>Virtual Reality Timeline</h3>
+                            <img src="img/NASA/Ideation/06_Choose top 2 ideas/VR Timeline.jpg">
+                            <p><b>Primary User:</b> Mission Planners</p>
+                            <p><b>Platform:</b> Google Daydream</p>
+                            <p><b>Description:</b> The VR Timeline tool allows people to quickly clear confusion up remotely by contacting the author of a standalone report. They can join a VR chat room through their phones, and then use a 3D representations of Europa to visualize information quickly.</p>
+                        </figure>
+                        <figure id="MR-sandbox">
+                            <h3>Mixed Reality Sandbox</h3>
+                            <img src="img/NASA/Ideation/06_Choose top 2 ideas/MR Tool.jpg">
+                            <p><b>Primary Users:</b> Investigative Scientists</p>
+                            <p><b>Platform:</b> Microsoft Hololens</p>
+                            <p><b>Description:</b> Sandbox allows an IE or IS to more easily convey instrument team science goals and requirements by supporting conversations with engineers with animated holograms. The holograms are meant to be lower fidelity to represent concepts, rather than actual precise data</p>
+                        </figure>
+                    </div>
+                    <!-- <figure id="first-iteration">
+                        <div>
+                            <img src="img/NASA/ideation/02_Top Ideas Refinement with Design Principles/Matrix 1-a.png">
+                            <figcaption>We first sorted the ideas we had generated for scientist-to-scientist collaboration.</figcaption>
+                        </div>
+                        <div id="second-matrix" >
+                            <img src="img/NASA/ideation/02_Top Ideas Refinement with Design Principles/Matrix 1-b.png">
+                            <figcaption>Then sorted the ideas that were pertinent to engineer-to-scientist collaboration.</figcaption>
+                        </div>
+                        <div>
+                            <img src="img/NASA/ideation/02_Top Ideas Refinement with Design Principles/Matrix 1-c.png">
+                            <figcaption>Lastly, we found the best ideas for timeline visualization.</figcaption>
+                        </div>
+                    </figure>
+                    <figure id="second-iteration">
+                        <div>
+                            <img src="img/NASA/ideation/02_Top Ideas Refinement with Design Principles/Matrix 2-a.png">
+                            <figcaption>We then determined the final four ideas we wanted to develop further.</figcaption>
+                        </div>
+                    </figure> -->
+                </section>
+                <section class="sections concept-prototype">
+                    <h2>Concept Prototype</h2>
+                    <div class="content">
+                        <p>We developed the VR Timeline idea more, adding features and visualizations ideas to fill the concept out more.</p>
+                        <p>However, we were confronted again with the challenge that we could not test our idea in person with the people that would ostensibly use the product. In response, we developed two concept videos that allowed us to remotely demonstrate our idea in different use cases.</p>
+                    </div>
+                    <div class="concept-videos">
+                        <div>
+                            <h3>Scenario 1</h3>
+                            <iframe src="https://player.vimeo.com/video/232183429" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <h3>Scenario 2</h3>
+                            <iframe src="https://player.vimeo.com/video/232183303" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>From the feedback we got, we realized we were not prepared to visualize scientific information in a trustworthy and feasible way. We pivoted and decided to focus entirely on the needs of mission planners how the need to solicit feedback on complex information remotely.</p>
+                    </div>
+                </section>
+                <section class="sections info-architecture">
+                    <h2>Information Architecture</h2>
+                    <div class="content">
+                        <p>Our first step in designing SpaceTalk was to build out the information architecture of our system. This provided the foundation that we drew from to design everythign else.</p>
+                        <b>Highlights:</b>
+                        <ul>
+                            <li>5 different information zones with different experiences</li>
+                            <li>People experience the information in the Jovian system, providing valuable context</li>
+                        </ul>
+                    </div>
+                    <figure>
+                        <img src="img/NASA/Design/Information Architecture.png">
+                    </figure>
+                </section>
+                <section class="sections interaction-flow">
+                    <h2>Interaction Flow</h2>
+                    <div>
+                        <div class="content">
+                            <p>We then established how someone might move through the system.</p>
+                            <b>Highlights:</b>
+                            <ul>
+                                <li>Either have a private or two person session</li>
+                                <li>VR experience mediated through your personal phone</li>
+                                <li>Simple menu system to minimize information searching</li>
+                            </ul>
+                        </div>
+                        <figure>
+                            <img src="img/NASA/Design/Interaction Flow.png">
+                        </figure>
+                    </div>
+                </section>
+                <section class="sections hero-flows">
+                    <h2>User Flows</h2>
+                    <h3>Orientation Zone</h3>
+                    <div>
+                        <div class="content">
+                            <p>This is the zone you would see first when entering SpaceTalk.</p>
+                            <b>Highlights:</b>
+                            <ul>
+                                <li>See the orientation and bearing of the orbiter in relation to Europa, Earth, or the Sun</li>
+                                <li>Travel in time along the trajectory to see how the orientation evolves</li>
+                            </ul>
+                        </div>
+                        <div class="video-containers">
+                            <video loop>
+                                <source src="vids/orientation_transparent.webm" type="video/webm">
+                                <source src="vids/orientation_withBackground.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+                <section class="sections hero-flows">
+                    <h3>Schedule Zone</h3>
+                    <div>
+                        <div class="content">
+                            <p>In the Schedule Zone, mission planners would be able to view exactly when which science instruments were operating and how.</p>
+                            <b>Highlights:</b>
+                            <ul>
+                                <li>See the different states of science instruments</li>
+                                <li>Toggle science instruments to be visible or invisible</li>
+                            </ul>
+                        </div>
+                        <div class="video-containers">
+                            <video loop>
+                                <source src="vids/NASA_transparent.webm" type="video/webm">
+                                <source src="vids/NASA_withBackground.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+                <section class="sections hero-flows">
+                    <h3>Coverage Zone</h3>
+                    <div>
+                        <div class="content">
+                            <p>In the inner-most information zone, the coverage of the different imaging instruments can be seen, so personnel can see exactly which areas of Europa are being captured.</p>
+                            <b>Highlights:</b>
+                            <ul>
+                                <li>Switch between a Wide Angle Camera (WAC), and Narrow Angle Camera (NAC)</li>
+                                <li>See Europa from the point of view of the orbiter</li>
+                            </ul>
+                        </div>
+                        <div class="video-containers">
+                            <video loop>
+                                <source src="vids/coverage_transparent.webm" type="video/webm">
+                                <source src="vids/coverage_withBackground.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="content">
+                        <h2>Headset Prototype</h2>
+                        <p>We were forced to make many assumption in the course of designing SpaceTalk due to the lack of widely-accepted design heuristics. We developed this headset prototype in order to test some the UI placement decisions we made were valid.</p>
+                        <b>Why so high-fidelity?</b>
+                        <p>A person's impression of a UI is greatly influenced by the environment they experience it in. Because we were proposing to place people into the Jovian system, we did not think lower fidelity prototypes with cardboard and paper would elicit good quality feedback.</p>
+                    </div>
+                    <div id="myEmbeddedScene">
+                        <a-scene embedded>
+
+                            <!-- textures for planets -->
+                            <a-assets>
+                                <img id="jupiterSurface" src="europa/textures/jupiter.jpg">
+                                <img id="europaSurface" src="europa/textures/sharpened.jpg">
+                                <img id="starrySky" src="europa/textures/starmap.jpg">
+                            </a-assets>
+
+                            <a-entity position="-2 0 -2">
+                                <!-- Jovian system -->
+                                <a-sphere id="jupiter" material="src: #jupiterSurface" position="-441 0 0" radius="45"></a-sphere>
+                                <a-sphere id="europa" material="src: #europaSurface" position="0 0 0" radius="1.0"></a-sphere>
+
+                                <!-- TRAJECTORY -->
+                                <a-torus id="trajectory" position="0 0 0" radius="4.24" radius-tubular="0.000431" rotation="-90 0 0" segments-tubular="74"></a-torus>
+
+                                <!-- RESET POINTS -->
+                                <a-entity layout="type: circle; radius: 4.24; angle: 30; plane: xz" position="0 0 0" >
+                                    <a-sphere color="red" radius="0.03" look-at="#camera">
+                                        <a-text class="resetPoints" value="Reset Point" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.4  0" width="2" align="center" ></a-text>
+                                        <a-text class="resetPoints" value="D  :  H  :  M  :  S" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.3  0" width="2" align="center" ></a-text>
+                                        <a-text class="resetPoints" value="12:23:45:02" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.2 0" width="3" align="center"></a-text>
+                                    </a-sphere>
+                                    <a-sphere color="red" radius="0.03" look-at="#camera">
+                                        <a-text class="resetPoints" value="Reset Point" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.4  0" width="2" align="center" ></a-text>
+                                        <a-text class="resetPoints" value="D  :  H  :  M  :  S" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.3  0" width="2" align="center"></a-text>
+                                        <a-text class="resetPoints" value="13:04:12:45" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.2 0" width="3" align="center"></a-text>
+                                    </a-sphere>
+                                </a-entity>
+
+                                <!-- DOWNLINK TIME -->
+                                <a-entity layout="type: circle; radius: 4.24;  plane: xz" rotation="0 200 0" position="0 0 0">
+                                    <a-circle color="#00FFF4" radius="0.03" look-at="#camera">
+                                        <a-text class="downlinkTimes" value="Downlink Time" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.4 0" width="2" align="center"></a-text>
+                                        <a-text class="downlinkTimes" value="D  :  H  :  M  :  S" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.3 0" width="2" align="center"></a-text>
+                                        <a-text class="downlinkTimes" value="14:00:00:00" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.2 0" width="3" align="center"></a-text>
+                                    </a-circle>
+                                </a-entity>
+
+                                <!-- UPLINK TIME -->
+                                <a-entity layout="type: circle; radius: 4.24;  plane: xz" rotation="0 290 0" position="0 0 0">
+                                    <a-sphere color="blue" radius="0.03" look-at="#camera">
+                                        <a-text class="uplinkTimes" value="Uplink Time" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.4 0" width="2" align="center"></a-text>
+                                        <a-text class="uplinkTimes" value="D  :  H  :  M  :  S" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.3 0" width="2" align="center"></a-text>
+                                        <a-text class="uplinkTimes" value="15:00:00:00" visible="false" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" position="0 0.2 0" width="3" align="center"></a-text>
+                                    </a-sphere>
+                                </a-entity>
+
+
+                                <!-- ORBITER -->
+                                <a-entity id="orbiter" position="3 0 3" scale="0.1 0.1 0.1" rotation="45 45 45">
+                                    <a-box id="body" height="1" width="1" position="0 0 0">
+                                        <a-cone id="commsDish" height="0.3" radiusTop="0" radiusBottom="1" position="0 1 0" rotation="0 0 180"></a-cone>
+                                        <a-plane id="solarPanelOne" height="1" width="2" position="2 0 0" rotate="45 0 0" color="#000080"></a-plane>
+                                        <a-plane id="solarPanelTwo" height="1" width="2" position="-2 0 0" rotate="45 0 0" color="#000080"></a-plane>
+                                    </a-box>
+                                </a-entity>
+                            </a-entity>
+
+
+
+                            <!-- SUB MENU -->
+                            <!-- the letters 'a' through 'd' here in text tags correspond to different symbols in the wingdingsPro font. This done through a combination of the application Hiero (converts vector fonts (.TTF) to bitmap fonts (.FNT)) and Birdfont(converts cubic bezier vector images (.SVG) to quadratic bezier vector images (.TTF))-->
+                            <a-entity position="3 -0.5 4.5" rotation="0 30 0">
+                                <a-entity id="secondaryMenu" scale="0.23 0.23 0.23" position="0 0.1469 -2.0" look-at="#camera">
+
+
+                                    <!-- SUB MENU EXPAND BUTTON -->
+                                    <a-circle sub-menu id="expandButton" radius="0.5" color="#ef7d22">
+
+                                        <!-- hover states -->
+                                        <a-animation begin="mouseenter" attribute="material.color" from="#ef7d22" to="#f3b17e" dur="400"></a-animation>
+                                        <a-animation begin="mouseleave" attribute="material.color" from="#f3b17e" to="#ef7d22" dur="400"></a-animation>
+
+                                        <!-- button label -->
+                                        <a-text id="expandButtonText" value="+" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png" width="25" position="-0.29 0.12 0"></a-text>
+                                    </a-circle>
+
+
+                                    <!-- SUB MENY BAR -->
+                                    <a-entity id="expandedMenu" visible="false" position="-3.5 1.8 0">
+                                        <!-- <a-animation begin="fade" attribute="visible" from="false" to="true"></a-animation> -->
+
+                                        <!-- static left bit of menu -->
+                                        <a-circle  id="leftLeftBit" submenu position="0.1865" radius="0.5" theta-start="0" theta-length="180" rotation="0 0 90" color="#252d4d"></a-circle>
+                                        <a-plane id="leftBit" position="0.27975" width="0.1865" color="#252d4d"></a-plane>
+
+
+                                        <!-- DATA ZONE NAVIGATION BUTTON -->
+                                        <a-plane id="schedule" sub-menu position="1.6825" width="2.619" height="1" color="#252d4d">
+
+                                            <!-- hover states -->
+                                            <a-animation attribute="material.color" from="#252d4d" to="#7C8193" begin="mouseenter" dur="400"></a-animation>
+                                            <a-animation attribute="material.color" from="#7C8193" to="#252d4d" begin="mouseleave" dur="400"></a-animation>
+
+                                            <!-- button label -->
+                                            <a-text value="COMMUNICATIONS" position="-1 0 0" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png"></a-text>
+                                        </a-plane>
+
+
+                                        <!-- DATA TOGGLE MENU BUTTON -->
+                                        <a-plane id="subMenu" sub-menu position="3.534" width="1.084" height="1" color="#252d4d" secondary-menu>
+
+                                            <!-- hover states -->
+                                            <a-animation attribute="material.color" from="#252d4d" to="#7C8193" begin="mouseenter" dur="400"></a-animation>
+                                            <a-animation attribute="material.color" from="#7C8193" to="#252d4d" begin="mouseleave" dur="400"></a-animation>
+
+                                            <!-- button label -->
+                                            <a-text value="a" position="-.15 .1 0" font="europa/textures/wingdingsPro.fnt" font-image="europa/textures/wingdingsPro.png" width="10"></a-text>
+                                        </a-plane>
+
+
+                                        <!-- PLAY/PAUSE BUTTON -->
+                                        <a-plane id="playPause" sub-menu position="4.618" width="1.084" height="1" color="#252d4d">
+
+                                            <!-- hover states -->
+                                            <a-animation attribute="material.color" from="#252d4d" to="#7C8193" begin="mouseenter" dur="400"></a-animation>
+                                            <a-animation attribute="material.color" from="#7C8193" to="#252d4d" begin="mouseleave" dur="400"></a-animation>
+
+                                            <!-- button label -->
+                                            <a-text value="b" position="-.15 .1 0" font="europa/textures/wingdingsPro.fnt" font-image="europa/textures/wingdingsPro.png" width="10"></a-text>
+                                        </a-plane>
+
+
+                                        <!-- TAKE A PICTURE OR VIDEO BUTTON -->
+                                        <a-plane id="pictureVideo" sub-menu position="5.695" width="1.070" height="1" color="#252d4d">
+
+                                            <!-- hover states -->
+                                            <a-animation attribute="material.color" from="#252d4d" to="#7C8193" begin="mouseenter" dur="400"></a-animation>
+                                            <a-animation attribute="material.color" from="#7C8193" to="#252d4d" begin="mouseleave" dur="400"></a-animation>
+
+                                            <!-- button label -->
+                                            <a-text value="c" position="-.15 .1 0" font="europa/textures/wingdingsPro.fnt" font-image="europa/textures/wingdingsPro.png" width="10"></a-text>
+                                        </a-plane>
+
+
+                                        <!-- ADDITIONAL INFO BUTTON -->
+                                        <a-plane id="moreInfo" sub-menu position="6.4975" width="0.535" height="1" color="#252d4d">
+
+                                            <!-- hover states -->
+                                            <a-animation attribute="material.color" from="#252d4d" to="#7C8193" begin="mouseenter" dur="400"></a-animation>
+                                            <a-animation attribute="material.color" from="#7C8193" to="#252d4d" begin="mouseleave" dur="400"></a-animation>
+
+                                            <!-- button label -->
+                                            <a-text value="d" position="-.15 .25 0" font="europa/textures/wingdingsPro.fnt" font-image="europa/textures/wingdingsPro.png" width="20"></a-text>
+                                        </a-plane>
+
+                                        <!-- part of the moreInfo button -->
+                                        <a-circle id="moreInfoRightBit" sub-menu position="6.76" radius="0.5" theta-start="0" theta-length="180" rotation="0 0 -90" color="#252d4d">
+
+                                            <!-- hover states -->
+                                            <a-animation attribute="material.color" from="#252d4d" to="#7C8193" begin="mouseenter" dur="400"></a-animation>
+                                            <a-animation attribute="material.color" from="#7C8193" to="#252d4d" begin="mouseleave" dur="400"></a-animation>
+                                        </a-circle>
+                                    </a-entity>
+                                </a-entity>
+
+
+
+                                <!-- SECONDARY MENU -->
+                                <!-- overlay to drive attention to secondary menu -->
+                                <a-sky id="subSubMenuOverlay" position="0 1.6 0" radius="1.99" opacity="0.7" color="black" visible="false"></a-sky>
+
+                                <!-- secondary menu -->
+                                <a-entity id="subSubMenu" position="0 1.6 0" rotation="0 100 0" visible="false">
+
+                                    <!-- back button to naviagte to sub menu -->
+                                    <a-entity id="backButtonContainer" position="1.8 -0.5 0.33">
+                                        <a-circle id="backButtonRim" class="subSubMenuButton" scale="0.1 0.1 0.1" color="white" look-at="#camera" secondary-menu>
+
+                                            <!-- hover states -->
+                                            <a-animation attribute="position" from="0 0 0" to="-0.1 0 -0.015" begin="mouseenter" dur="400"></a-animation>
+                                            <a-animation attribute="position" from="-0.1 0 -0.015" to="0 0 0" begin="mouseleave" dur="400"></a-animation>
+
+                                            <a-circle id="backButtonCenter" radius="0.9" position="0 0 0.01" color="#252d4d">
+
+                                                    <!-- back icon -->
+                                                    <a-text value="h" font="europa/textures/wingdingsPro.fnt" font-image="europa/textures/wingdingsPro.png" width="40" position="-.55 .57 0">
+                                                </a-text>
+                                            </a-circle>
+                                        </a-circle>
+                                    </a-entity>
+
+                                    <!-- description -->
+                                    <a-entity id="description" layout="type: circle; radius:1.9; e; plane:xz">
+                                        <a-text></a-text>
+                                        <a-text></a-text>
+                                    </a-entity>
+
+                                    <!-- sub menu bar -->
+                                    <a-entity id="subSubMenuOptions" layout="type: circle; radius:1.9; angle: 10; plane:xz">
+
+                                        <!-- toggle reset time points -->
+                                        <a-entity id="resetMarksContainer">
+                                            <a-circle id="resetMarksRim" class="subSubMenuButton" scale="0.1 0.1 0.1" color="white" look-at="#camera" secondary-menu>
+
+                                                <!-- hover states -->
+                                                <a-animation attribute="position" from="0 0 0" to="-0.1 0 -0.015" begin="mouseenter" dur="400"></a-animation>
+                                                <a-animation attribute="position" from="-0.1 0 -0.015" to="0 0 0" begin="mouseleave" dur="400"></a-animation>
+
+                                                <a-circle id="resetMarksCenter" radius="0.9" position="0 0 0.01" color="#252d4d">
+
+                                                     <!-- button label -->
+                                                    <a-text value="e" font="europa/textures/wingdingsPro.fnt" font-image="europa/textures/wingdingsPro.png" width="30" position="-.45 .3 0"></a-text>
+                                                </a-circle>
+                                            </a-circle>
+                                        </a-entity>
+
+                                        <!-- toggle downlink time points -->
+                                        <a-entity id="downlinkTimesContainer">
+                                            <a-circle id="downLinkTimesRim" class="subSubMenuButton" scale="0.1 0.1 0.1" color="white" look-at="#camera" secondary-menu>
+
+                                                <!-- hover states -->
+                                                <a-animation attribute="position" from="0 0 0" to="-0.1 0 -0.015" begin="mouseenter" dur="400"></a-animation>
+                                                <a-animation attribute="position" from="-0.1 0 -0.015" to="0 0 0" begin="mouseleave" dur="400"></a-animation>
+
+                                                <a-circle id="downLinkTimesCenter" radius="0.9" position="0 0 0.01" color="#252d4d">
+
+                                                    <!-- button label -->
+                                                    <a-text value="f" font="europa/textures/wingdingsPro.fnt" font-image="europa/textures/wingdingsPro.png" width="30" position="-.45 .3 0"></a-text>
+                                                </a-circle>
+                                            </a-circle>
+                                        </a-entity>
+
+                                        <!-- toggle uplink time points -->
+                                        <a-entity id="transmitTimesContainer">
+                                            <a-circle id="transmitTimesRim" class="subSubMenuButton" scale="0.1 0.1 0.1" color="white" look-at="#camera" secondary-menu>
+
+                                                <!-- hover states -->
+                                                <a-animation attribute="position" from="0 0 0" to="-0.1 0 -0.015" begin="mouseenter" dur="400"></a-animation>
+                                                <a-animation attribute="position" from="-0.1 0 -0.015" to="0 0 0" begin="mouseleave" dur="400"></a-animation>
+
+                                                <a-circle id="transmitTimesCenter" radius="0.9" position="0 0 0.01" color="#252d4d">
+
+                                                    <!-- button label -->
+                                                    <a-text value="g" font="europa/textures/wingdingsPro.fnt" font-image="europa/textures/wingdingsPro.png" width="30" position="-.45 .2 0"></a-text>
+                                                </a-circle>
+                                            </a-circle>
+                                        </a-entity>
+
+                                    </a-entity>
+                                </a-entity>
+                                <a-entity id="daydreamController" laser-controls></a-entity>
+                                <a-camera id="camera" fov="60">
+                                    <a-cursor geometry="primitive: ring" material="color: white; shader: flat" cursor-controls></a-cursor>
+                                </a-camera>
+                            </a-entity>
+                            <a-entity light="type: directional" intensity="1" color="#EEE" position="0 0 516"></a-entity>
+
+
+                            <!-- the void -->
+                            <a-sky  material="src: #starrySky" ></a-sky>
+                            <a-entity layout="type: circle; radius:4500; angle: 15; plane:xz" rotation='0 -80 0'>
+                                <a-circle id="corona" look-at="#camera" color="#CEC303" radius="100">
+                                    <a-text id="sunLabel" value="Sun" opacity="1" position="0 200 0" width="3000" align="center" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png">
+                                    </a-text>
+                                    <a-entity light="type: point; color: #FFFFFF; intensity: 1; distance: 500" position="0 0 200"></a-entity>
+                                    <a-circle id="sunCore" color="#F5E701" radius="50" position="0 0 300"></a-circle>
+                                    <a-entity light="type: point; color: #FFFFFF; intensity: 1; distance: 500" position="0 0 400"></a-entity>
+                                </a-circle>
+                                <a-circle id="earth" look-at="#camera" color="#7CD0DF" radius="50">
+                                    <a-text id="earthLabel" value="Earth" opacity="1" position="0 150 0" width="3000" align="center" font="europa/textures/futura.fnt" font-image="europa/textures/futura.png">
+                                    </a-text>
+                                    <a-entity light="type: point; color: #FFFFFF; intensity: 1; distance: 500" position="0 0 50"></a-entity>
+                                </a-circle>
+                            </a-entity>
+                        </a-scene>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="footer-container">
+            <footer>
+                <a href="mailto:edparo83@gmail.com" target="_blank" class="hvr-icon-grow" aria-label="Email">
+                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/edwardproberts/" class="hvr-icon-grow" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </a>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/index.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    </body>
+</html>
